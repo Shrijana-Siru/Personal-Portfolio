@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required links-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <title> My Profilio </title>
+    <!-- this link stylesheet connects with fonts.html-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: 'Reggae One', cursive;
+        }
+        .banner{
+            position: relative;
+        }
+        .arrow{
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            border-radius: 50px;
+            text-align: center;
+            background-color: #fff;
+            color: #0097a7;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+        .arrow:hover{
+            background: #0097a7;
+            color: #fff;
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+
+        }
+        .banner{
+            background-image:url(https://cdn.pixabay.com/photo/2019/04/30/12/34/smart-4168483_1280.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+        }
+
+         .banner2{
+            background-image:url('https://learn.g2.com/hubfs/What_is_Information_Technology.jpg');
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+        }
+        header{
+            padding: 30px 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        header ul li{
+            display: inline-block;
+        }
+        header ul li a{
+            display: block;
+            padding: 20px 30px;
+            background-color: #eb1398;
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+          border-radius:6px; 
+        h1 {
+            color: rgb(48, 12, 12); 
+        }
+        h2 {
+            color: #fff; 
+        }
+        .banner p{
+          font-size: 50px;
+        }
+        .p{
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+     <section class="banner">
+               <div class="arrow"> &#9886;
+           </div>
+            <nav>
+            <div class="content">
+                <header> 
+                    <div class="tail"><p>Welcome To My Page </p></div>
+                    <div class="logo"></div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="front.html">Home</a>
+                                 </li>
+                            <li>
+                                <a href="cv.html">Curriculum vitae (CV)</a>
+                            </li>
+                            <li>
+                                <a href="blogs.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="form.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="research.html">
+                                Research</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                </header>
+                <div class="come">
+                    <p>Shrijana's Profile </p>
+                 </div>
+                 <div class="go">
+                    <p>hello i am shrijana and i am software designer.may i help you</p>
+                </div>
+        </section>
+        <section class="contact">
+            <div class="content"></div>
+            <div class="call">
+                <p>Some software</p></div>
+               <div class="yes"> <p>Here, are the following software that are essential for you</p>
+               </div>
+            <section class="need">
+                <div class ="no1">
+                    <h3>ORACLE</h3>
+            <p>It is a database management software product. A database contains an organized collection of information. A database management system is not only used for storing the data but to effectively manage it and provides high performance, authorized access and failure recovery features</p>
+            </div>
+                <div class ="no2">
+                     <h3>preium pro</h3>
+            <p>Premiere Pro is the industry-leading video editing software for social sharing, TV, and film. Creative tools, integration with other apps and services, and the power of Adobe Sensei help you craft footage into polished films and videos.</p>
+           </div>
+                    
+                </div>
+                <div class = "no3">
+                    <h3>Adobe photoshop</h3>
+            <p>Adobe Photoshop is a critical tool for designers, web developers, graphic artists, photographers, and creative professionals. It is widely used for image editing, retouching, creating image compositions, website mockups, and adding affects. Digital or scanned images can be edited for use online or in-print</p>
+           </div> 
+                </div>
+        </section>
+
+    </main>
+    <footer>
+    </footer>
+    <script type="text/javascript">
+
+        var myBanner = document.querySelector('.banner');
+
+        var myArrow = document.querySelector('.arrow');
+        myArrow.addEventListener('click', function(){
+            console.log('i am clicke');
+            myBanner.classList.add('banner2');
+
+
+
+        });
+        
+
+    </script>
+</body>
+</html>

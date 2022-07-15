@@ -1,0 +1,62 @@
+header ul li a:hover{
+color: purple;
+}
+
+.header ul li{
+color: #fff;
+font-size: 18px;
+font-weight: 5s00;
+margin-left: 25px;
+transition: color 0.3s ease
+}
+.call{
+    font-size:33px;
+    text-align:center;
+}
+.yes{
+      font-size:15px;
+    text-align:center;
+}
+
+.tail{
+     font-size:40px;
+     color:#fff;
+}
+
+.come{
+    padding-top:50px;
+    font-size:40px;
+    text-align:center;
+    color:#fff
+}
+
+.go{
+     padding-right:90px;
+     padding-left:90px;
+    font-size:30px;
+    text-align:center;
+    font-family: cursive;
+    color: #fff;
+}
+
+.need{
+    background-color: #eee;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+
+}
+.need .no1.no2.no3{
+    flex: 1;
+    padding: 15px;
+    background-color: #fff;box-shadow: 0px 3px 16px rgba(0,0,0,0.2);
+}
+
+.call{
+    color:cyan;
+}
+
+.yes{
+    color: cyan;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> contact </title>
+	<meta name="description" content="Just Basic HTML"/>
+	<meta name="keywords" content="HTML" />
+	<meta class="author" content="Islington" />
+	<style>
+		body{
+			background-color: #b3cccc;
+		}
+		.menu ul{
+    padding: 30px 0;
+            display: block;
+            width: 100%;
+}
+.menu li {
+    display: inline-block;
+    column-gap: 15px;
+}
+.menu a{
+    text-decoration: none;
+      display: block;
+            padding: 20px 30px;
+            background-color: #eb1398;
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+          border-radius:6px; 
+
+}
+nav{
+	float: right;
+	</style>
+}
+</head>
+<body>
+	<nav>
+		<div class="menu">
+                        <ul>
+                            <li>
+                                <a href="front.html">Home</a>
+                                 </li>
+                            <li>
+                                <a href="cv.html">Curriculum vitae (CV)</a>
+                            </li>
+                            <li>
+                                <a href="blogs.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="form.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="research.html">
+                                Research</a>
+                            </li>
+                        </ul>
+                    </div>
+	</nav>
+	<div class="container2">
+		<h1>contact form</h1>
+		<h2>Send me Response</h2>
+		<form name="messageForm" onsubmit="validationForm()">
+			<p>First name: <input type="text" name="firstname"></p>
+			<p>Last name: <input type="text" name="lastname"></p>
+			<p>Gender: <input type="radio" name="gender" value="Men" checked> Men <input type="radio" name="gender" value="Women"> Women </p>
+			<p>Message: <br><textarea name="message" rows="20" cols="30"placeholder> text here </textarea></p>
+			<p>
+				<input type="submit" value="send">
+			</p>
+		</form>
+	</div>
+	<footer>
+		<table width="100%">
+			<tr>
+				<th>
+					<div style="color:green;font-family: Courier New;">
+						<p>&copy;Shrijana Bhandari</p>
+					</div>
+				</th>
+			</tr>
+		</table>
+	</footer>
+</body>
+<script>
+	function validationForm(){
+	var firstname = document.forms["messageForm"]["firstname"].value;
+	var lastname = document.forms["messageForm"]["lastname"].value;
+	var gender = document.forms["messageForm"]["gender"].value;
+	var message = document.forms["messageForm"]["message"].value;
+
+	if (firstname == "" || lastname == "" || message == ""){
+		alert("Empty fields found. Please fill the form.");
+	}
+	else {
+		alert("Thank you for the feedback.");
+	}
+
+}
+</script>
+</html>
